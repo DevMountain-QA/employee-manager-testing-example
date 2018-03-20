@@ -1,10 +1,21 @@
 module.exports = {
+    title: 'span[class="titleText"]',
+    footer: '.footer',
     noEmployee: 'p[id="noEmployee"]',
+    saveButton: 'button[name="save"]',
+    cancelButton: 'button[name="cancel"]',
+    addEmployee: 'li[name="addEmployee"]',
     employeeOnList: employeeId => `li[name="employee${employeeId}"]`,
     employeeNameBar: 'p[name="employeeName"]',
     employeeId: 'span[name="employeeID"]',
     nameInput: 'input[name="nameEntry"]',
     phoneInput: 'input[name="phoneEntry"]',
-    titleInput: 'input[name="titleEntry"]'
+    titleInput: 'input[name="titleEntry"]',
+    nameInputLabel: '//*[@class="placeholderText"][1]',
+    phoneInputLabel: '//*[@class="placeholderText"][2]',
+    titleInputLabel: '//*[@class="placeholderText"][3]',
+    firstError: '//span[@class="errorMessage"]/div[1]',
+    secondError: '//span[@class="errorMessage"]/div[2]',
+    thirdError: '//span[@class="errorMessage"]/div[3]',
 }
 
