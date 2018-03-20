@@ -16,7 +16,6 @@ module.exports = {
     'Add Employee (DEM-9)': browser => {
         browser
             .click(selectors.addEmployee)
-            .click(selectors.employeeOnList('11'))
         didEmployeeLoad(browser, { name: newEmployee.name, phone: newEmployee.phone, title: newEmployee.title, id: '11' })
         browser
             .clearValue(selectors.phoneInput)
